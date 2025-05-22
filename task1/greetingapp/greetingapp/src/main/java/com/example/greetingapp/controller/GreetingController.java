@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class GreetingController {
 
+    @GetMapping(value ="/"
+    public string hello(){return "Hello Vistula, in my first Spring controller.";}
+    
     @GetMapping("/greeting")
     public String greeting(
             @RequestParam(name = "name", required = false, defaultValue = "Guest") String name,
